@@ -52,4 +52,10 @@ def scan_all(func, init_ip, number, ports):
             print("%s:%s is valid: %s" % (str(inputs[i][1]), str(inputs[i][2]), p.outputs[i]))
 
 if __name__ == "__main__":
+    """
+    Network is unreachable 不存在
+    No route to host 不存在
+    Connection refused 主机存在，端口不存在
+    Connection timed out 端口可能存在，但是不响应
+    """
     pass
