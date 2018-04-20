@@ -1,1 +1,1 @@
- while true; do { echo -e "HTTP/1.1 200 OK\r\n\r\n`date`"; bash -c test;} | nc -l 8000; done 
+ while true; do { echo "HTTP/1.1 404 Not Found\r\nContent-Length: 4\r\nConnection: Closed\r\n\r\n1234"; bash -c test;} | nc -l 8023; done 
